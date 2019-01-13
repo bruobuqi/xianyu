@@ -1,6 +1,7 @@
 package com.xianyu.chuhuomingxi.controller;
 
 
+import com.xianyu.chuhuomingxi.entity.JinghuoDetail;
 import com.xianyu.chuhuomingxi.entity.Xianyumaster;
 import com.xianyu.chuhuomingxi.service.XianyuMasterService;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,11 @@ public class XianyuContoller {
     @RequestMapping("/test")
     public  List<Xianyumaster> nihao(){
       List<Xianyumaster> list= xianyuMasterService.getAllMaster();
+        return list;
+    }
+    @RequestMapping("/test2")
+    public  List<JinghuoDetail> nihao2(){
+        List<JinghuoDetail> list= xianyuMasterService.getAllMaster2();
         return list;
     }
 
